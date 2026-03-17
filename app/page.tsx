@@ -472,7 +472,7 @@ export default function Home() {
 
         <div className="max-w-300 mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
-          <div className="flex w-32 sm:w-36 md:w-40 h-32 sm:h-40 md:h-56 shrink-0 md:-ml-30 md:-mt-90">
+          <div className="hidden sm:flex w-32 sm:w-36 md:w-40 h-32 sm:h-40 md:h-56 shrink-0 md:-ml-30 md:-mt-90">
             <img src="/coffee_with_hande.png" alt="Coffee hand" className="w-full h-full object-contain object-bottom md:scale-350" />
           </div>
 
@@ -490,7 +490,7 @@ export default function Home() {
 
           </div>
 
-          <div className="flex w-56 sm:w-64 md:w-96 h-32 sm:h-40 md:h-56 shrink-0 md:-mr-30">
+          <div className="hidden w-56 sm:flex sm:w-64 md:w-96 h-32 sm:h-40 md:h-56 shrink-0 md:-mr-30">
             <img src="/coffee_beans.png" alt="Coffee beans" className="w-full h-full object-contain md:scale-250" />
           </div>
 
@@ -605,7 +605,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex w-56 lg:w-80 h-36 shrink-0 items-center justify-center md:justify-end">
+          <div className="hidden sm:flex  w-56 lg:w-80 h-36 shrink-0 items-center justify-center md:justify-end">
             <img src="/coffee_cup.png" alt="Coffee cup" className="w-full h-full object-contain md:scale-350" />
           </div>
 
