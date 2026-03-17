@@ -109,7 +109,6 @@ export default function Home() {
             </button>
 
           </div>
-
         </div>
 
 
@@ -232,8 +231,6 @@ export default function Home() {
         </div>
 
       </section>
-
-
 
       {/* SPECIAL COFFEE */}
 
