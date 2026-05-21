@@ -1,11 +1,17 @@
+import React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 const geistSans = Geist({
@@ -19,8 +25,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SUMMERBREW",
-  description: "Change the World. Start with coffee.",
+  title: "Cafe del Riu",
+  description: "Blessed Brews, Blessed Days.",
 };
 
 export default function RootLayout({
@@ -34,16 +40,16 @@ export default function RootLayout({
       className={cn(
         "font-sans scroll-smooth",
         inter.variable,
+        playfair.variable,
         geistSans.variable,
         geistMono.variable
       )}
     >
       <body
         className={cn(
-          "min-h-screen bg-white text-[#1e1e1e] antialiased overflow-x-hidden"
+          "min-h-screen bg-[#f9f8f4] text-[#2d3a2b] antialiased overflow-x-hidden"
         )}
       >
-        {/* Page Wrapper */}
         <div className="flex min-h-screen flex-col">
           {children}
         </div>
